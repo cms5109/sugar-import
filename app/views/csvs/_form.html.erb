@@ -1,0 +1,38 @@
+<%= form_for @csv, :html => {:multipart => true} do |f| %>
+  <% if @csv.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@csv.errors.count, "error") %> prohibited this csv from being saved:</h2>
+
+      <ul>
+      <% @csv.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form">
+    <%= f.label "File Name" %>
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-6">
+          <%= f.text_field :csv_name, class: "form-control input-md" %>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="form-group">
+        <div class="col-md-6">
+          <%= f.file_field :file %>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="form-group">
+        <%= f.submit "Create CSV", :class=> "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+<% end %>

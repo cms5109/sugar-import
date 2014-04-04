@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><eackucf:Acknowledgement xmlns:eackucf="http://xml.edifecs.com/schema/EACKUCF" xmlns:ucf="http://xml.edifecs.com/schema/UCF" xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+  <ucf:EcfVersion xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="1.3.1.1"/>
+  <ucf:DefaultFormat xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="ECF"/>
+  <eackucf:Packaging>
+    <ucfd:Identifier xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="645F5531-4DE0-4072-852E-AFA99754118B"/>
+    <ucfd:Name xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="TC1_AuditFileHappyPath_modDep.dat.CMSFFM.0"/>
+    <ucfd:Environment xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="Test"/>
+    <ucfd:Direction xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="Outbound"/>
+  </eackucf:Packaging>
+  <eackucf:Type value="Discrepancy Report"/>
+  <eackucf:Header>
+    <ucfd:Date xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="2014-02-17"/>
+    <ucfd:Time xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="17:43:24.343"/>
+  </eackucf:Header>
+  
+  <eackucf:AcknowledgementBatch>
+      <eackucf:Type value="Intake Group"/>
+  </eackucf:AcknowledgementBatch>
+  <eackucf:AcknowledgementBatch>
+        <ucf:Property xmlns:ucf="http://xml.edifecs.com/schema/UCF" name="SubscriberName" value="BROWN VICKY" valueType="STRING"/>
+        <ucf:Property xmlns:ucf="http://xml.edifecs.com/schema/UCF" name="HasErrors" value="true" valueType="STRING"/>
+        <eackucf:Type value="Policy Unit Audit Discrepancy"/>
+        <eackucf:ControlNumber value="659369001_88999000_3456780000"/>
+        <eackucf:BatchItem>
+          <eackucf:RelatedEntity>
+            <ucfd:Identification xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+              <ucfd:ExternalPrimaryIdentifier>
+                <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="SourceSubscriberIdentifier"/>
+                <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="3456780000"/>
+              </ucfd:ExternalPrimaryIdentifier>
+              <ucfd:ExternalSecondaryIdentifier>
+                <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PayerSubscriberIdentifier"/>
+                <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="345678000I"/>
+              </ucfd:ExternalSecondaryIdentifier>
+            </ucfd:Identification>
+          </eackucf:RelatedEntity>
+        </eackucf:BatchItem>
+        <eackucf:AcknowledgementItem>
+          <eackucf:Type value="Subscriber"/>
+          <eackucf:ControlNumber value="6593690013456780000"/>
+          <eackucf:StatusAcknowledgement>
+            <ucfd:AcknowledgementCode xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="Rejected"/>
+            <ucfd:StatusDetail xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+              <ucf:ErrorID xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="0"/>
+              <ucf:Severity xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="Information"/>
+              <ucf:BizErrorMessage xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="Property {PolicyUnit[1]/Subscriber[1]/Member[1]/Address[1]/AddressLine2[1]} in intake audit differs from local repository"/>
+              <ucf:PreErrorData xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="LAKE ORION"/>
+              <ucf:PostErrorData xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="LAKE KRION"/>
+            </ucfd:StatusDetail>
+          </eackucf:StatusAcknowledgement>
+          <eackucf:BusinessItem>
+            <eackucf:RelatedEntity>
+              <ucfd:FirstName xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="BROWN"/>
+              <ucfd:LastName xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="VICKY"/>
+              <ucfd:Identification xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+                <ucfd:ExternalPrimaryIdentifier>
+                  <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="SourceMemberIdentifier"/>
+                  <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="3456780000"/>
+                </ucfd:ExternalPrimaryIdentifier>
+                <ucfd:ExternalSecondaryIdentifier>
+                  <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PayerMemberIdentifier"/>
+                  <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="345678000I"/>
+                </ucfd:ExternalSecondaryIdentifier>
+              </ucfd:Identification>
+            </eackucf:RelatedEntity>
+          </eackucf:BusinessItem>
+          <eackucf:AcknowledgementLineItem>
+            <eackucf:Type value="Coverage"/>
+            <eackucf:ControlNumber value="22222WA002002104"/>
+          </eackucf:AcknowledgementLineItem>
+        </eackucf:AcknowledgementItem>
+  </eackucf:AcknowledgementBatch>
+  <eackucf:AcknowledgementBatch>
+        <ucf:Property xmlns:ucf="http://xml.edifecs.com/schema/UCF" name="SubscriberName" value="JULIAS CEASER" valueType="STRING"/>
+        <ucf:Property xmlns:ucf="http://xml.edifecs.com/schema/UCF" name="HasErrors" value="true" valueType="STRING"/>
+        <eackucf:Type value="Policy Unit Audit Discrepancy"/>
+        <eackucf:ControlNumber value="659369001_00990099_2001999870"/>
+        <eackucf:BatchItem>
+          <eackucf:RelatedEntity>
+            <ucfd:Identification xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+              <ucfd:ExternalPrimaryIdentifier>
+                <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="SourceSubscriberIdentifier"/>
+                <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="2001999870"/>
+              </ucfd:ExternalPrimaryIdentifier>
+              <ucfd:ExternalSecondaryIdentifier>
+                <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PayerSubscriberIdentifier"/>
+                <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="20019998I"/>
+              </ucfd:ExternalSecondaryIdentifier>
+            </ucfd:Identification>
+          </eackucf:RelatedEntity>
+        </eackucf:BatchItem>
+        <eackucf:AcknowledgementItem>
+          <eackucf:Type value="Subscriber"/>
+          <eackucf:ControlNumber value="6593690012001999870"/>
+          <eackucf:StatusAcknowledgement>
+            <ucfd:AcknowledgementCode xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="Rejected"/>
+          </eackucf:StatusAcknowledgement>
+          <eackucf:BusinessItem>
+            <eackucf:RelatedEntity>
+              <ucfd:FirstName xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="JULIAS"/>
+              <ucfd:LastName xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="CEASER"/>
+              <ucfd:Identification xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+                <ucfd:ExternalPrimaryIdentifier>
+                  <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="SourceMemberIdentifier"/>
+                  <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="2001999870"/>
+                </ucfd:ExternalPrimaryIdentifier>
+                <ucfd:ExternalSecondaryIdentifier>
+                  <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PayerMemberIdentifier"/>
+                  <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="20019998I"/>
+                </ucfd:ExternalSecondaryIdentifier>
+              </ucfd:Identification>
+            </eackucf:RelatedEntity>
+          </eackucf:BusinessItem>
+          <eackucf:AcknowledgementLineItem>
+            <eackucf:Type value="Coverage"/>
+            <eackucf:ControlNumber value="22222WA002002104"/>
+          </eackucf:AcknowledgementLineItem>
+        </eackucf:AcknowledgementItem>
+        <eackucf:AcknowledgementItem>
+          <eackucf:Type value="Dependent"/>
+          <eackucf:ControlNumber value="6593690012001999880"/>
+          <eackucf:StatusAcknowledgement>
+            <ucfd:StatusDetail xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+              <ucf:ErrorID xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="0"/>
+              <ucf:Severity xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="Information"/>
+              <ucf:BizErrorMessage xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="Property {PolicyUnit[1]/Dependent[1]/Member[1]/Address[1]/AddressLine1[1]} in intake audit differs from local repository"/>
+              <ucf:PreErrorData xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PATUXENT PARK"/>
+              <ucf:PostErrorData xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PATUXENTCHANGE PARK"/>
+            </ucfd:StatusDetail>
+          </eackucf:StatusAcknowledgement>
+          <eackucf:BusinessItem>
+            <eackucf:RelatedEntity>
+              <ucfd:FirstName xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="JOSE"/>
+              <ucfd:LastName xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="CEASERS"/>
+              <ucfd:Identification xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+                <ucfd:ExternalPrimaryIdentifier>
+                  <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="SourceMemberIdentifier"/>
+                  <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="2001999880"/>
+                </ucfd:ExternalPrimaryIdentifier>
+                <ucfd:ExternalSecondaryIdentifier>
+                  <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PayerMemberIdentifier"/>
+                  <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="20019999I"/>
+                </ucfd:ExternalSecondaryIdentifier>
+              </ucfd:Identification>
+            </eackucf:RelatedEntity>
+          </eackucf:BusinessItem>
+          <eackucf:AcknowledgementLineItem/>
+        </eackucf:AcknowledgementItem>
+        <eackucf:AcknowledgementItem>
+          <eackucf:Type value="Dependent"/>
+          <eackucf:ControlNumber value="6593690012001999890"/>
+          <eackucf:StatusAcknowledgement>
+            <ucfd:StatusDetail xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+              <ucf:ErrorID xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="0"/>
+              <ucf:Severity xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="Information"/>
+              <ucf:BizErrorMessage xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="Property {PolicyUnit[1]/Dependent[1]/Member[1]/Address[1]/AddressLine1[1]} in intake audit differs from local repository"/>
+              <ucf:PreErrorData xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PATUXENT PARK"/>
+              <ucf:PostErrorData xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PATUXENTCHANGE PARK"/>
+            </ucfd:StatusDetail>
+          </eackucf:StatusAcknowledgement>
+          <eackucf:BusinessItem>
+            <eackucf:RelatedEntity>
+              <ucfd:FirstName xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="EMILY"/>
+              <ucfd:LastName xmlns:ucfd="http://xml.edifecs.com/schema/UCFD" value="CEASERS"/>
+              <ucfd:Identification xmlns:ucfd="http://xml.edifecs.com/schema/UCFD">
+                <ucfd:ExternalPrimaryIdentifier>
+                  <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="SourceMemberIdentifier"/>
+                  <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="2001999880"/>
+                </ucfd:ExternalPrimaryIdentifier>
+                <ucfd:ExternalSecondaryIdentifier>
+                  <ucf:Qualifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="PayerMemberIdentifier"/>
+                  <ucf:Identifier xmlns:ucf="http://xml.edifecs.com/schema/UCF" value="20019999I"/>
+                </ucfd:ExternalSecondaryIdentifier>
+              </ucfd:Identification>
+            </eackucf:RelatedEntity>
+          </eackucf:BusinessItem>
+          <eackucf:AcknowledgementLineItem/>
+        </eackucf:AcknowledgementItem>
+  </eackucf:AcknowledgementBatch>
+</eackucf:Acknowledgement>
