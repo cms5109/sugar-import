@@ -121,8 +121,11 @@ class Csv < ActiveRecord::Base
 				red = "N"
 				yellow = "N"
 
-
-				role = "Role: " + acknowledgement_batch.xpath("//eackucf:AcknowledgementItem/eackucf:Type")[1].attribute("value").value
+				if acknowledgement_batch.xpath("//eackucf:AcknowledgementItem/eackucf:Type")[index].present?
+					role = "Role: " + acknowledgement_batch.xpath("//eackucf:AcknowledgementItem/eackucf:Type")[index].attribute("value").value
+				else
+					role = "Role:"
+				end
 				payer_member_id = "PayerMemberID: " + acknowledgement_batch.xpath("//eackucf:BusinessItem//eackucf:RelatedEntity//ucfd:Identification//ucfd:ExternalSecondaryIdentifier//ucf:Identifier")[index-1].attribute("value").value
 				subscriber_name = "SubscriberName: " + acknowledgement_batch.xpath("//eackucf:BusinessItem//eackucf:RelatedEntity//ucfd:FirstName")[index-1].attribute("value").value + " " + acknowledgement_batch.xpath("//eackucf:BusinessItem//eackucf:RelatedEntity//ucfd:LastName")[index-1].attribute("value").value
 

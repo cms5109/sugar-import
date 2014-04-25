@@ -2,7 +2,7 @@ class CsvsController < ApplicationController
   # GET /csvs
   # GET /csvs.json
   def index
-    @csvs = Csv.all
+    #@csvs = Csv.all
 
     respond_to do |format|
       format.html # index.html.erb
